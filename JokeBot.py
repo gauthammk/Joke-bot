@@ -20,14 +20,15 @@ def keyboard(bot, update):
 
 
 #initialse the reddit access token for the api key
-reddit = praw.Reddit(client_id='AZfYZhZ_qLKECw', 
-                    	 client_secret='P5SY1iiHI49nqpDmcO5nsivQJjQ', 
-                    	 user_agent='Joke', 
-                   	  	 username='i_amgmk', 
-                   	     password='ga_mbat0015')
+reddit = praw.Reddit(client_id='', 
+                    	 client_secret='', 
+                    	 user_agent='', 
+                   	  	 username='', 
+                   	     password='')
 print('Logging in...')
-#Telegran BotAPI authentication handler and command resolution
-updater = Updater('1041100217:AAH1zNDAG6uBa5JTnETHe8qUEvBIl0Nb71k')
+#telegran BotAPI authentication handler and command resolution
+#add api key to initialise the updater
+updater = Updater('')
 dp = updater.dispatcher
 #handler to send a joke 
 dp.add_handler(CommandHandler('joke', tellJoke))
